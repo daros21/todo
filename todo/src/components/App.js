@@ -5,51 +5,10 @@ import TaskList from "./TaskList";
 
 class App extends Component {
   state = {
-    tasks: [
-      {
-        id: 0,
-        text: "zagrac w gre",
-        date: "2018-02-15",
-        important: false,
-        active: true,
-        finishDate: "2018-02-15",
-      },
-      {
-        id: 1,
-        text: "zagrac w",
-        date: "2018-02-15",
-        important: true,
-        active: true,
-        finishDate: null,
-      },
-      {
-        id: 2,
-        text: "zagrac w gre 2 ",
-        date: "2018-02-15",
-        important: false,
-        active: true,
-        finishDate: null,
-      },
-      {
-        id: 3,
-        text: "zagrac w gre 3 ",
-        date: "2018-02-15",
-        important: true,
-        active: true,
-        finishDate: null,
-      },
-      {
-        id: 4,
-        text: "zagrac w gre  4",
-        date: "2018-02-15",
-        important: true,
-        active: true,
-        finishDate: null,
-      },
-    ],
+    tasks: [],
   };
 
-  counter = 5;
+  counter = 0;
 
   deleteTask = (id) => {
     console.log(`delete ${id}`);
